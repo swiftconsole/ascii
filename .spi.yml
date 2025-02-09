@@ -1,0 +1,6 @@
+version: 1
+metadata:
+  authors: Ihar Biaspalau
+builder:
+  configs:
+    - documentation_targets: [ASCII]
