@@ -1,16 +1,29 @@
 # ASCII
 
-## Adding `ASCII` as a Dependency
+A zero-cost, type-safe Swift representation of ASCII characters with comprehensive formatting options and convenient utilities.
 
-To use the `ASCII` library in a SwiftPM project, 
-add it to the dependencies for your package target:
+## Features
+
+- 🚀 Zero runtime overhead with compile-time safety
+- 💪 Complete ASCII character set (0-127) as type-safe enum
+- 🛠 Multiple representation formats
+- ⚡️ Direct integer comparisons
+- 🧰 Convenient character properties
+- 📚 Extensive documentation
+- ✨ Pure Swift implementation
+
+## Installation
+
+### Swift Package Manager
+
+Add the following to your `Package.swift` file:
 
 ```swift
 let package = Package(
     // name, platforms, products, etc.
     dependencies: [
         // other dependencies
-        .package(url: "https://github.com/besya/ascii", from: "1.0.0"),
+        .package(url: "https://github.com/besya/ascii.git", from: "1.0.0"),
     ],
     targets: [
         .target(name: "<library>", dependencies: [
@@ -74,7 +87,7 @@ bracket.escaped     // StaticString("\\u{005B}")
 bracket.htmlEntity  // StaticString("&#91;")
 ```
 
-### Comparable with Int and UInt8
+### Direct Comparisons
 
 ```swift
 ASCII.leftBracket == 91         // true
@@ -83,7 +96,7 @@ UInt8(90) < ASCII.leftBracket   // true
 ASCII.leftBracket <= UInt8(92)  // true
 ```
 
-### Convenience methods
+### Convenience Methods
 
 ```swift
 ASCII.A.isDigit         // false
@@ -95,3 +108,24 @@ ASCII.A.isPrintable     // true
 ASCII.A.isWhitespace    // false
 ASCII.A.isAlphanumeric  // true
 ```
+
+## Why ASCII?
+
+- **Type Safety**: Prevent invalid ASCII values at compile time
+- **Performance**: Zero-cost abstractions with no runtime overhead
+- **Convenience**: Rich set of utility methods and properties
+- **Clarity**: Descriptive enum cases instead of raw values
+- **Versatility**: Multiple representation formats for different use cases
+
+## Requirements
+
+- Swift 5.0+
+- iOS 13.0+ / macOS 10.15+ / tvOS 13.0+ / watchOS 6.0+
+
+## License
+
+This project is available under the MIT license. See the LICENSE file for more info.
+
+## Contribution
+
+Contributions are welcome! Please feel free to submit a Pull Request.
