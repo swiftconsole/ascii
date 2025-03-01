@@ -5,7 +5,6 @@
 //  Created by Ihar Biaspalau on 8.02.25.
 //
 
-
 extension ASCII {
     /// Creates an ASCII value from an integer.
     ///
@@ -21,7 +20,7 @@ extension ASCII {
     /// ```
     @inline(__always)
     public init?(_ value: Int) {
-        guard value >= 0 && value <= 127 else { return nil }
+        guard value >= 0, value <= 127 else { return nil }
         self.init(UInt8(truncatingIfNeeded: value))
     }
 
