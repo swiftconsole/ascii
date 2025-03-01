@@ -5,7 +5,6 @@
 //  Created by Ihar Biaspalau on 28.01.25.
 //
 
-
 /// Representation of ASCII characters (0-127).
 ///
 /// This enum provides a complete set of ASCII characters with type safety and zero runtime overhead.
@@ -51,7 +50,7 @@
 /// bracket.hexadecimal // StaticString("5B")
 /// bracket.octal       // StaticString("133")
 /// bracket.unicode     // StaticString("\u{005B}")
-/// bracket.escaped     // StaticString("\\u{005B}")
+/// bracket.escaped     // StaticString("\x5b")
 /// bracket.htmlEntity  // StaticString("&#91;")
 /// ```
 ///
