@@ -45,10 +45,6 @@ func decimal(ascii: UInt8, byte: UInt8) async throws {
     #expect(ascii == byte)
 }
 
-@Test(arguments: ASCII.allCases) func description(ascii: ASCII) async throws {
-    #expect(ascii.description == ascii.unicode.description)
-}
-
 @Test(arguments:
         Array(zip(ASCII.allCases.map(\.hexadecimal).map(String.init), helper.hexademicals)))
 func hexadecimal(ascii: String, hex: String) async throws {

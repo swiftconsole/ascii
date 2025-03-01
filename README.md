@@ -67,9 +67,9 @@ let sgrBoldSequence: [ASCII] = CSI + [.digit1, .m]
 let sgrItalicSequence: [ASCII] = CSI + [.digit3, .m]
 let sgrResetSequence: [ASCII] = CSI + [.digit0, .m]
 
-let boldOn: String = sgrBoldSequence.map(String.init).joined()
-let italicOn: String = sgrItalicSequence.map(String.init).joined()
-let reset: String = sgrResetSequence.map(String.init).joined()
+let boldOn: String = sgrBoldSequence.map(\.unicode).map(String.init).joined()
+let italicOn: String = sgrItalicSequence.map(\.unicode).map(String.init).joined()
+let reset: String = sgrResetSequence.map(\.unicode).map(String.init).joined()
 
 print(boldOn + "Hello," + reset + italicOn + " World!")
 // Prints: **Hello,** _World!_
@@ -85,7 +85,7 @@ bracket.binary      // StaticString("01011011")
 bracket.hexadecimal // StaticString("5B")
 bracket.octal       // StaticString("133")
 bracket.unicode     // StaticString("\u{005B}")
-bracket.escaped     // StaticString("\\u{005B}")
+bracket.escaped     // StaticString("\x5b")
 bracket.htmlEntity  // StaticString("&#91;")
 ```
 
