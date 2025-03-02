@@ -5,7 +5,6 @@
 //  Created by Ihar Biaspalau on 8.02.25.
 //
 
-
 extension UInt8 {
     init(_ ascii: ASCII) { self = ascii.decimal }
 }
