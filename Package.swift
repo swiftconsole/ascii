@@ -4,18 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "ASCII",
-    products: [
-        .library(
-            name: "ASCII",
-            targets: ["ASCII"])
-    ],
-    targets: [
-        .target(
-            name: "ASCII"),
-        .testTarget(
-            name: "ASCIITests",
-            dependencies: ["ASCII"]
-        ),
-    ]
+  name: "ASCII",
+  products: [
+    .library(
+      name: "ASCII",
+      targets: ["ASCII"])
+  ],
+  targets: [
+    .target(
+      name: "ASCII"),
+    .testTarget(
+      name: "ASCIITests",
+      dependencies: ["ASCII"]),
+  ]
 )

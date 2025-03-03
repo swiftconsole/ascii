@@ -6,43 +6,43 @@
 //
 
 extension ASCII {
-    public static func == (lhs: ASCII, rhs: UInt8) -> Bool {
-        lhs.decimal == rhs
-    }
+  public static func == (lhs: ASCII, rhs: UInt8) -> Bool {
+    lhs.decimal == rhs
+  }
 
-    public static func == (lhs: UInt8, rhs: ASCII) -> Bool {
-        lhs == rhs.decimal
-    }
+  public static func == (lhs: UInt8, rhs: ASCII) -> Bool {
+    lhs == rhs.decimal
+  }
 
-    public static func < (lhs: ASCII, rhs: UInt8) -> Bool {
-        lhs.decimal < rhs
-    }
+  public static func < (lhs: ASCII, rhs: UInt8) -> Bool {
+    lhs.decimal < rhs
+  }
 
-    public static func <= (lhs: ASCII, rhs: UInt8) -> Bool {
-        lhs.decimal <= rhs
-    }
+  public static func <= (lhs: ASCII, rhs: UInt8) -> Bool {
+    lhs.decimal <= rhs
+  }
 
-    public static func > (lhs: ASCII, rhs: UInt8) -> Bool {
-        lhs.decimal > rhs
-    }
+  public static func > (lhs: ASCII, rhs: UInt8) -> Bool {
+    lhs.decimal > rhs
+  }
 
-    public static func >= (lhs: ASCII, rhs: UInt8) -> Bool {
-        lhs.decimal >= rhs
-    }
+  public static func >= (lhs: ASCII, rhs: UInt8) -> Bool {
+    lhs.decimal >= rhs
+  }
 
-    public static func < (lhs: UInt8, rhs: ASCII) -> Bool {
-        lhs < rhs.decimal
-    }
+  public static func < (lhs: UInt8, rhs: ASCII) -> Bool {
+    lhs < rhs.decimal
+  }
 
-    public static func <= (lhs: UInt8, rhs: ASCII) -> Bool {
-        lhs <= rhs.decimal
-    }
+  public static func <= (lhs: UInt8, rhs: ASCII) -> Bool {
+    lhs <= rhs.decimal
+  }
 
-    public static func > (lhs: UInt8, rhs: ASCII) -> Bool {
-        lhs > rhs.decimal
-    }
+  public static func > (lhs: UInt8, rhs: ASCII) -> Bool {
+    lhs > rhs.decimal
+  }
 
-    public static func >= (lhs: UInt8, rhs: ASCII) -> Bool {
-        lhs >= rhs.decimal
-    }
+  public static func >= (lhs: UInt8, rhs: ASCII) -> Bool {
+    lhs >= rhs.decimal
+  }
 }

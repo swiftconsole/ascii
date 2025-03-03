@@ -6,19 +6,19 @@
 //
 
 extension ASCII: Comparable {
-    public static func < (lhs: ASCII, rhs: ASCII) -> Bool {
-        lhs.decimal < rhs.decimal
-    }
+  public static func < (lhs: ASCII, rhs: ASCII) -> Bool {
+    lhs.decimal < rhs.decimal
+  }
 
-    public static func <= (lhs: ASCII, rhs: ASCII) -> Bool {
-        lhs.decimal <= rhs.decimal
-    }
+  public static func <= (lhs: ASCII, rhs: ASCII) -> Bool {
+    lhs.decimal <= rhs.decimal
+  }
 
-    public static func > (lhs: ASCII, rhs: ASCII) -> Bool {
-        lhs.decimal > rhs.decimal
-    }
+  public static func > (lhs: ASCII, rhs: ASCII) -> Bool {
+    lhs.decimal > rhs.decimal
+  }
 
-    public static func >= (lhs: ASCII, rhs: ASCII) -> Bool {
-        lhs.decimal >= rhs.decimal
-    }
+  public static func >= (lhs: ASCII, rhs: ASCII) -> Bool {
+    lhs.decimal >= rhs.decimal
+  }
 }
