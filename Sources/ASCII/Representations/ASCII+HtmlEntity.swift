@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns HTML entity representation (like `&#65;`).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var htmlEntity: StaticString {
     switch self {

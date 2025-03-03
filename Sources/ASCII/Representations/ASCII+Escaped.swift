@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns escaped representation (like \n, \t, etc).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var escaped: StaticString {
     switch self {

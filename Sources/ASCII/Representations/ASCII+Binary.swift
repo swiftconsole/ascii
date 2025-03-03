@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns binary representation (00000000-01111111).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var binary: StaticString {
     switch self {

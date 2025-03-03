@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns Unicode representation of the ASCII character.
+  ///
   /// Uses `StaticString` for zero-cost abstraction and no runtime overhead.
   public var unicode: StaticString {
     switch self {

@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns octal representation (000-177).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var octal: StaticString {
     switch self {

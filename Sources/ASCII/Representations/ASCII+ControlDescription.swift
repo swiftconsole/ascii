@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns standard control character description (like NUL, SOH, etc).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var controlDescription: StaticString {
     switch self {

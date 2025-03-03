@@ -9,17 +9,17 @@ import ASCII
 
 extension ASCII {
   public static func find(_ by: Int) -> Self { allCases[by] }
-  public static func find(_ by: UInt8) -> Self { allCases[helper.index(by)] }
+  public static func find(_ by: UInt8) -> Self { allCases[Helper.index(by)] }
   public static func find(_ by: UnicodeScalar) -> Self {
-    allCases[helper.index(by)]
+    allCases[Helper.index(by)]
   }
   public static func find(_ by: Character) -> Self {
-    allCases[helper.index(by)]
+    allCases[Helper.index(by)]
   }
-  public static func find(_ by: String) -> Self { allCases[helper.index(by)] }
+  public static func find(_ by: String) -> Self { allCases[Helper.index(by)] }
 }
 
-struct helper {
+struct Helper {
   public static func index(_ from: Int) -> Int { from }
   public static func index(_ from: UInt8) -> Int { Int(from) }
   public static func index(_ from: UnicodeScalar) -> Int { Int(from.value) }
@@ -34,15 +34,19 @@ struct helper {
   public static let binaries: [String] = ints.map {
     String(format: "%08d", Int(String($0, radix: 2))!)
   }
+
   public static let hexademicals: [String] = ints.map {
     String(format: "%02X", $0)
   }
+
   public static let htmlEntities: [String] = ints.map {
     String(format: "&#%d;", $0)
   }
+
   public static let octals: [String] = ints.map {
     String(format: "%03d", Int(String($0, radix: 8))!)
   }
+
   public static let unicodes: [String] = strings
   public static let controlDescriptions: [ASCII: String] = [
     .null: "NUL",
@@ -82,21 +86,31 @@ struct helper {
   ]
 }
 
-struct comparants {
+struct Comparants {
   public static let ascii_with_ascii =
     Array(zip(ASCII.allCases.dropLast(), ASCII.allCases.dropFirst()))
 
   public static let ascii_with_int =
-    Array(zip(ASCII.allCases.dropLast(), ASCII.allCases.dropFirst().map(\.int)))
+    Array(
+      zip(
+        ASCII.allCases.dropLast(), ASCII.allCases.dropFirst().map(\.int)
+      ))
 
   public static let int_with_ascii =
-    Array(zip(ASCII.allCases.dropLast().map(\.int), ASCII.allCases.dropFirst()))
+    Array(
+      zip(
+        ASCII.allCases.dropLast().map(\.int), ASCII.allCases.dropFirst()
+      ))
 
   public static let ascii_with_uint8 =
     Array(
-      zip(ASCII.allCases.dropLast(), ASCII.allCases.dropFirst().map(\.decimal)))
+      zip(
+        ASCII.allCases.dropLast(),
+        ASCII.allCases.dropFirst().map(\.decimal)))
 
   public static let uint8_with_ascii =
     Array(
-      zip(ASCII.allCases.dropLast().map(\.decimal), ASCII.allCases.dropFirst()))
+      zip(
+        ASCII.allCases.dropLast().map(\.decimal),
+        ASCII.allCases.dropFirst()))
 }

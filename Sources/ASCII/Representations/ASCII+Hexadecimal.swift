@@ -7,6 +7,7 @@
 
 extension ASCII {
   /// Returns hexadecimal representation (00-7F).
+  ///
   /// Uses `StaticString` for zero runtime overhead.
   public var hexadecimal: StaticString {
     switch self {

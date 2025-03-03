@@ -11,6 +11,7 @@ extension Int {
 
 extension ASCII {
   /// Returns integer representation (0-127).
+  ///
   /// Direct value with no boxing or runtime overhead.
   public var int: Int {
     switch self {

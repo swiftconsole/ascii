@@ -11,6 +11,7 @@ extension UInt8 {
 
 extension ASCII {
   /// Returns decimal representation (0-127) as a raw byte value.
+  ///
   /// Direct value with no boxing or runtime overhead.
   public var decimal: UInt8 {
     switch self {
