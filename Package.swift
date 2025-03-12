@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "ASCII",
+  name: "ascii",
   products: [
     .library(
       name: "ASCII",
