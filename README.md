@@ -27,7 +27,7 @@ let package = Package(
     // name, platforms, products, etc.
     dependencies: [
         // other dependencies
-        .package(url: "https://github.com/swiftconsole/ascii.git", from: "1.2.0"),
+        .package(url: "https://github.com/swiftconsole/ascii.git", from: "1.2.1"),
     ],
     targets: [
         .target(name: "<library>", dependencies: [
