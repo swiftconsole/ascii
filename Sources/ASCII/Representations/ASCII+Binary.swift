@@ -1,9 +1,15 @@
+//===----------------------------------------------------------------------===//
 //
-//  ASCII+Octal.swift
-//  ASCII
+// This source file is part of the ASCII open source project
 //
-//  Created by Ihar Biaspalau on 8.02.25.
+// Copyright (c) 2025 Ihar Biaspalau
+// Licensed under Apache License v2.0
 //
+// See LICENSE.txt for license information
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+//===----------------------------------------------------------------------===//
 
 extension ASCII {
   /// Returns binary representation (00000000-01111111).

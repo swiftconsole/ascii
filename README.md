@@ -1,5 +1,7 @@
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fswiftconsole%2Fascii%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/swiftconsole/ascii)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fswiftconsole%2Fascii%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/swiftconsole/ascii)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbesya%2Fascii%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/besya/ascii)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbesya%2Fascii%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/besya/ascii)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 # ASCII
 
 A zero-cost, type-safe Swift representation of ASCII characters with comprehensive formatting options and convenient utilities.
@@ -124,10 +126,10 @@ ASCII.A.isAlphanumeric  // true
 - Swift 5.0+
 - iOS 13.0+ / macOS 10.15+ / tvOS 13.0+ / watchOS 6.0+
 
+## Contributing
+
+Contributions are welcome! Please read the [contributing guide](CONTRIBUTING.md) before submitting a pull request.
+
 ## License
 
-This project is available under the MIT license. See the LICENSE file for more info.
-
-## Contribution
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+Licensed under the Apache License v2.0. See [LICENSE.txt](LICENSE.txt) for details.

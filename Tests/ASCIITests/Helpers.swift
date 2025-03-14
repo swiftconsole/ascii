@@ -1,9 +1,15 @@
+//===----------------------------------------------------------------------===//
 //
-//  Helpers.swift
-//  ASCII
+// This source file is part of the ASCII open source project
 //
-//  Created by Ihar Biaspalau on 9.02.25.
+// Copyright (c) 2025 Ihar Biaspalau
+// Licensed under Apache License v2.0
 //
+// See LICENSE.txt for license information
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+//===----------------------------------------------------------------------===//
 
 import ASCII
 
