@@ -1,5 +1,5 @@
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbesya%2Fascii%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/besya/ascii)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbesya%2Fascii%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/besya/ascii)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fswiftconsole%2Fascii%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/swiftconsole/ascii)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fswiftconsole%2Fascii%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/swiftconsole/ascii)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # ASCII
@@ -27,7 +27,7 @@ let package = Package(
     // name, platforms, products, etc.
     dependencies: [
         // other dependencies
-        .package(url: "https://github.com/swiftconsole/ascii.git", from: "1.2.1"),
+        .package(url: "https://github.com/swiftconsole/ascii.git", from: "1.2.2"),
     ],
     targets: [
         .target(name: "<library>", dependencies: [
